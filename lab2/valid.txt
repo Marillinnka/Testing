@@ -1,0 +1,13 @@
+﻿http://links.qatl.ru/index.html 200 OK
+http://links.qatl.ru/about.html 200 OK
+http://links.qatl.ru/work.html 200 OK
+http://links.qatl.ru/pricing.html 200 OK
+http://links.qatl.ru/blog.html 200 OK
+http://links.qatl.ru/../links/movedper.php 301 MovedPermanently
+http://links.qatl.ru/contact.html 200 OK
+http://links.qatl.ru/blog-single.html 200 OK
+http://links.qatl.ru/../links/found302.php 302 Redirect
+http://links.qatl.ru/../links/no204content.php 204 NoContent
+http://links.qatl.ru/ 200 OK
+Count of links: 11
+Checking date: 27.09.2022 18:57:08

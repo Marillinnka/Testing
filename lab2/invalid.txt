@@ -1,0 +1,10 @@
+﻿http://links.qatl.ru/../links/locked.php 423 423
+http://links.qatl.ru/../links/404not404found404.php 404 NotFound
+http://links.qatl.ru/../links/return500bad.php 500 InternalServerError
+http://links.qatl.ru/../links/deny403forbidden.php 403 Forbidden
+http://links.qatl.ru/../links/502gateaway502.php 502 BadGateway
+http://links.qatl.ru/../links/teapot418.php 500 InternalServerError
+http://links.qatl.ru/../links/un503availible.php 503 ServiceUnavailable
+http://links.qatl.ru/../links/access401unauthorized.php 401 Unauthorized
+Count of links: 8
+Checking date: 27.09.2022 18:57:08

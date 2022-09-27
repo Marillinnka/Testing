@@ -1,0 +1,35 @@
+C:\Users\Андрей\source\repos\lab2\BrokenLinks\bin\Debug\BrokenLinks.exe.config
+C:\Users\Андрей\source\repos\lab2\BrokenLinks\bin\Debug\BrokenLinks.exe
+C:\Users\Андрей\source\repos\lab2\BrokenLinks\bin\Debug\BrokenLinks.pdb
+C:\Users\Андрей\source\repos\lab2\BrokenLinks\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Андрей\source\repos\lab2\BrokenLinks\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Андрей\source\repos\lab2\BrokenLinks\bin\Debug\HtmlAgilityPack.xml
+C:\Users\Андрей\source\repos\lab2\BrokenLinks\obj\Debug\BrokenLinks.csprojAssemblyReference.cache
+C:\Users\Андрей\source\repos\lab2\BrokenLinks\obj\Debug\BrokenLinks.csproj.CoreCompileInputs.cache
+C:\Users\Андрей\source\repos\lab2\BrokenLinks\obj\Debug\BrokenLinks.csproj.CopyComplete
+C:\Users\Андрей\source\repos\lab2\BrokenLinks\obj\Debug\BrokenLinks.exe
+C:\Users\Андрей\source\repos\lab2\BrokenLinks\obj\Debug\BrokenLinks.pdb
+C:\Users\User\Downloads\lab2\BrokenLinks\bin\Debug\BrokenLinks.exe.config
+C:\Users\User\Downloads\lab2\BrokenLinks\bin\Debug\BrokenLinks.exe
+C:\Users\User\Downloads\lab2\BrokenLinks\bin\Debug\BrokenLinks.pdb
+C:\Users\User\Downloads\lab2\BrokenLinks\bin\Debug\HtmlAgilityPack.dll
+C:\Users\User\Downloads\lab2\BrokenLinks\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\User\Downloads\lab2\BrokenLinks\bin\Debug\HtmlAgilityPack.xml
+C:\Users\User\Downloads\lab2\BrokenLinks\obj\Debug\BrokenLinks.csproj.AssemblyReference.cache
+C:\Users\User\Downloads\lab2\BrokenLinks\obj\Debug\BrokenLinks.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Downloads\lab2\BrokenLinks\obj\Debug\BrokenLinks.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\lab2\BrokenLinks\obj\Debug\BrokenLinks.csproj.CopyComplete
+C:\Users\User\Downloads\lab2\BrokenLinks\obj\Debug\BrokenLinks.exe
+C:\Users\User\Downloads\lab2\BrokenLinks\obj\Debug\BrokenLinks.pdb
+D:\Учёба\3 курс\тестирование\lab2\BrokenLinks\bin\Debug\BrokenLinks.exe.config
+D:\Учёба\3 курс\тестирование\lab2\BrokenLinks\bin\Debug\BrokenLinks.exe
+D:\Учёба\3 курс\тестирование\lab2\BrokenLinks\bin\Debug\BrokenLinks.pdb
+D:\Учёба\3 курс\тестирование\lab2\BrokenLinks\bin\Debug\HtmlAgilityPack.dll
+D:\Учёба\3 курс\тестирование\lab2\BrokenLinks\bin\Debug\HtmlAgilityPack.pdb
+D:\Учёба\3 курс\тестирование\lab2\BrokenLinks\bin\Debug\HtmlAgilityPack.xml
+D:\Учёба\3 курс\тестирование\lab2\BrokenLinks\obj\Debug\BrokenLinks.csproj.AssemblyReference.cache
+D:\Учёба\3 курс\тестирование\lab2\BrokenLinks\obj\Debug\BrokenLinks.csproj.SuggestedBindingRedirects.cache
+D:\Учёба\3 курс\тестирование\lab2\BrokenLinks\obj\Debug\BrokenLinks.csproj.CoreCompileInputs.cache
+D:\Учёба\3 курс\тестирование\lab2\BrokenLinks\obj\Debug\BrokenLinks.csproj.CopyComplete
+D:\Учёба\3 курс\тестирование\lab2\BrokenLinks\obj\Debug\BrokenLinks.exe
+D:\Учёба\3 курс\тестирование\lab2\BrokenLinks\obj\Debug\BrokenLinks.pdb
