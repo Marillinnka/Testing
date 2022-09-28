@@ -10,4 +10,4 @@ http://links.qatl.ru/../links/found302.php 302 Redirect
 http://links.qatl.ru/../links/no204content.php 204 NoContent
 http://links.qatl.ru/ 200 OK
 Count of links: 11
-Checking date: 27.09.2022 18:57:08
+Checking date: 28.09.2022 9:55:13

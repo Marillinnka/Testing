@@ -7,4 +7,4 @@ http://links.qatl.ru/../links/teapot418.php 500 InternalServerError
 http://links.qatl.ru/../links/un503availible.php 503 ServiceUnavailable
 http://links.qatl.ru/../links/access401unauthorized.php 401 Unauthorized
 Count of links: 8
-Checking date: 27.09.2022 18:57:08
+Checking date: 28.09.2022 9:55:13

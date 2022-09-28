@@ -77,7 +77,16 @@ namespace BrokenLinks
                     if (url.Contains(fullLink) || (!url.StartsWith("http://") && !url.StartsWith("https://") && !url.Contains(':')))
                     {
                         allLinks.Add(url);
-                        CheckGetLinks(fullLink + url);
+
+                        if(url.Contains(fullLink))
+                        {
+                            CheckGetLinks(url);
+                        }
+
+                        else
+                        {
+                            CheckGetLinks(fullLink + url);
+                        }
                     }
                 }
             }
