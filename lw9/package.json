@@ -1,0 +1,16 @@
+{
+  "name": "lw9",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha ./tests/**/*.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "got": "^12.5.3",
+    "mocha": "^10.1.0"
+  }
+}
