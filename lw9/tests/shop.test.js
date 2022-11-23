@@ -106,15 +106,38 @@ describe("Интернет-магазин часов", function () {
   });
 
   it("Создание товара с невалидными данными", async function () { // Надо отправлять полностью невалидные данные
-    const response = await request.createProduct(data.invalidProduct);
+    var response = await request.createProduct(data.invalidProduct);
     idProducts.push(response.body.id);
 
-    const products = (await request.getAllProducts()).body;
-    const product = products.find(shopProduct => shopProduct.id == response.body.id);
+    assert(!response.HTTPError, "Ошибка сервера при создании invalidProduct");
+    assert(response.body.status == 0, "Статус ответа при создании invalidProduct - удача");
 
-    assert(!response.HTTPError, "Ошибка сервера");
-    assert(response.body.status == 0, "Статус ответа - удача");
-    assert(!product, "Невалидный товар присутствует в списке товаров");
+    response = await request.createProduct(data.invalidProductCategoryId);
+    idProducts.push(response.body.id);
+
+    assert(!response.HTTPError, "Ошибка сервера при создании invalidProductCategoryId");
+    assert(response.body.status == 0, "Статус ответа при создании invalidProductCategoryId - удача");
+
+    response = await request.createProduct(data.invalidProductStatus);
+    idProducts.push(response.body.id);
+
+    assert(!response.HTTPError, "Ошибка сервера при создании invalidProductStatus");
+    assert(response.body.status == 0, "Статус ответа при создании invalidProductStatus - удача");
+
+    response = await request.createProduct(data.invalidProductHit);
+    idProducts.push(response.body.id);
+
+    assert(!response.HTTPError, "Ошибка сервера при создании invalidProductHit");
+    assert(response.body.status == 0, "Статус ответа при создании invalidProductHit - удача");
+
+    const products = (await request.getAllProducts()).body;
+
+    products.forEach(product =>{
+      assert(product.price != data.invalidProduct.price, "Найден товар с невалидным полем price");
+      assert(product.category_id != data.invalidProductCategoryId.category_id, "Найден товар с невалидным полем category_id");
+      assert(product.status != data.invalidProductStatus.status, "Найден товар с невалидным полем status");
+      assert(product.hit != data.invalidProductHit.hit, "Найден товар с невалидным полем hit");
+    })
   });
 
   it("Создание товара с пустыми данными", async function () {
@@ -178,13 +201,13 @@ describe("Интернет-магазин часов", function () {
     const productSecond = products.find(shopProduct => shopProduct.id == responseSecond.body.id);
     const productThird = products.find(shopProduct => shopProduct.id == responseThird.body.id);
     
-    assert(productFirst.alias == "nice-watch",
+    assert(productFirst.alias == "golden-watch",
     "Значение поля alias не соответствует формату 'заголовок'");
     
-    assert(productSecond.alias == "nice-watch-0",
+    assert(productSecond.alias == "golden-watch-0",
     "Значение поля alias не соответствует формату 'заголовок-0'");
     
-    assert(productThird.alias == "nice-watch-0-0",
+    assert(productThird.alias == "golden-watch-0-0",
     "Значение поля alias не соответствует формату 'заголовок-0-0'");
     });
     

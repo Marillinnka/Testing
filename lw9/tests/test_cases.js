@@ -3,7 +3,7 @@ export default
   "validProduct": 
   {
       "category_id": "7",
-      "title": "Nice watch",
+      "title": "Golden watch",
       "content": "New content",
       "price": "100",
       "old_price": "50",
@@ -15,7 +15,7 @@ export default
 
   "invalidProduct": 
   {
-    "category_id": "16",
+    "category_id": "20",
     "title": 100,
     "content": 300,
     "price": "twenty",
@@ -24,6 +24,45 @@ export default
     "keywords": 404,
     "description": 340,
     "hit": "200"
+  },
+
+  "invalidProductCategoryId": 
+  {
+    "category_id": "16",
+    "title": "Nice watch",
+    "content": "New content",
+    "price": "100",
+    "old_price": "50",
+    "status": "1",
+    "keywords": "New keywords",
+    "description": "New description",
+    "hit": "1"
+  },
+
+  "invalidProductStatus": 
+  {
+    "category_id": "15",
+    "title": "Nice watch",
+    "content": "New content",
+    "price": "100",
+    "old_price": "50",
+    "status": "2",
+    "keywords": "New keywords",
+    "description": "New description",
+    "hit": "1"
+  },
+
+  "invalidProductHit": 
+  {
+    "category_id": "15",
+    "title": "Nice watch",
+    "content": "New content",
+    "price": "100",
+    "old_price": "50",
+    "status": "1",
+    "keywords": "New keywords",
+    "description": "New description",
+    "hit": "2"
   },
 
   "validUpdateProduct": 
