@@ -1,0 +1,48 @@
+{
+  "baseUrl": "http://shop.qatl.ru/",
+
+  "loginUrl": "user/login",
+
+
+  "userAutorization": 
+  {
+    "login": "marillinnka",
+    "password": "qwerty"
+  },
+  "authorizationMessage": "Вы успешно авторизованы",
+
+
+  "searchData": "Royal London",
+  "watchFirst": 
+  {
+    "name": "Royal London 41040-01",
+    "price": 90
+  },
+  "searchRoyalLondonUrl": "search/?s=Royal%20London%2041040-01",
+  "searchNotification": "Поиск по запросу \"Royal London 41040-01\"",
+  "menUrl": "category/men",
+  "watchSecond": 
+  {
+    "name": "Casio GA-1000-1AER",
+    "price": 400
+  },
+
+
+  "cartUrl": "cart/view",
+  "citizenWatchUrl": "category/citizen",
+  "watchThird": 
+  {
+    "name": "Citizen BJ2111-08E",
+    "price": 500
+  },
+  "newUserAuthorization": 
+  {
+    "login": "Marinaa",
+    "password": "qwerty",
+    "name": "Марина",
+    "email": "Marinaa@mail.ru",
+    "address": "г.Йошкар-Ола, ул.Советская 153, 91",
+    "note": "Спасибо за отличные часы!"
+  },
+  "messageAfterCreateOrder": "Спасибо за Ваш заказ. В ближайшее время с Вами свяжется менеджер для согласования заказа"
+}
