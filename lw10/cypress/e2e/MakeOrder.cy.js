@@ -5,16 +5,17 @@ import ModalWindow from "./Objects/ModalWindow";
 import Table from "./Objects/Table";
 import Order from "./Objects/Order";
 import testData from "../fixtures/TestData.json";
+import Functions from "./Objects/Functions";
 
 describe('LUXURY WATCHES', () => 
 {
+  const functions = new Functions();
   const home = new Home();
   const search = new Search();
   const authorization = new Authorization();
   const modalWindow = new ModalWindow();
   const table = new Table();
   const order = new Order();
-  const userLogin = Date.now().toString();
 
   it('Оформление заказа', () => 
   {
@@ -29,33 +30,13 @@ describe('LUXURY WATCHES', () =>
 
     cy.url().should('eq', testData.baseUrl + testData.citizenWatchUrl);
 
-    search.containerOfProduct().within(() => 
-    {
-      search.searchProductInContainer(testData.watchThird.name).within(() => 
-      {
-        search.addProductToCart().click();
-      });
-    });
+    functions.addWatchInCart(testData.watchThird.name);
 
-    modalWindow.modalWindowContent().within(() => 
-    {
-      table.tableCell(1, 2).contains(testData.watchThird.name);
-      table.tableCell(1, 4).contains(testData.watchThird.price);
-      table.totalProductPrice().contains(testData.watchThird.price);
-      modalWindow.modalFooter().within(() => 
-      {
-        modalWindow.makeOrderButton().click();
-      });
-    });
+    functions.checkWatchInformation(testData.watchThird.name, testData.watchThird.price);
 
     cy.url().should('eq', testData.cartUrl);
 
-    table.tableOrdering().within(() => 
-    {
-      table.tableCell(1, 2).contains(testData.watchThird.name);
-      table.tableCell(1, 4).contains(testData.watchThird.price);
-      table.totalProductPrice().contains(testData.watchThird.price);
-    });
+    functions.checkWatchInformationInCart(testData.watchThird.name, testData.watchThird.price);
 
     cy.scrollTo(0, 350, { duration: 100 });
 

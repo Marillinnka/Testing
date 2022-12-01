@@ -1,18 +1,17 @@
 import Home from './Objects/Home';
 import Search from './Objects/Search';
 import testData from "../fixtures/TestData.json";
+import Functions from "./Objects/Functions";
 
 describe('LUXURY WATCHES', () => 
 {
-
+  const functions = new Functions();
   const home = new Home();
   const search = new Search();
 
   it('Поиск товара', () => 
   {
-    cy.visit(testData.baseUrl);
-    cy.url().should('eq', testData.baseUrl);
-    cy.viewport('macbook-11');
+    functions.openSite(testData.baseUrl, 'macbook-11');
 
     home.searchForm().within(() => 
     {
@@ -23,20 +22,19 @@ describe('LUXURY WATCHES', () =>
     cy.url().should('eq', testData.baseUrl + testData.searchRoyalLondonUrl);
     search.breadcrumb().contains(testData.searchNotification);
 
-    home.headerBottom().within(() => 
-    {
-    home.men().click();
-    });
+    functions.clickMenCategory();
 
     cy.url().should('eq', testData.baseUrl + testData.menUrl);
     cy.scrollTo(0, 350, { duration: 100 });
+
     search.containerOfProduct().within(() => 
     {
       search.searchProductInContainer(testData.watchSecond.name).within(() => 
       {
-      search.clickProductInContainer().click();
+        search.clickProductInContainer().click();
       });
     });
+
     search.singlePara().contains(testData.watchSecond.name);
   });
 });

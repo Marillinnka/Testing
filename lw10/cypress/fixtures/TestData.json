@@ -6,7 +6,7 @@
 
   "userAutorization": 
   {
-    "login": "marillinnka",
+    "login": "marilllinnka",
     "password": "qwerty"
   },
   "authorizationMessage": "Вы успешно авторизованы",
@@ -28,7 +28,7 @@
   },
 
 
-  "cartUrl": "cart/view",
+  "cartUrl": "http://shop.qatl.ru/cart/view",
   "citizenWatchUrl": "category/citizen",
   "watchThird": 
   {
@@ -37,12 +37,26 @@
   },
   "newUserAuthorization": 
   {
-    "login": "Marinaa",
+    "login": "Marinaaa",
     "password": "qwerty",
     "name": "Марина",
-    "email": "Marinaa@mail.ru",
+    "email": "Marinaaa@mail.ru",
     "address": "г.Йошкар-Ола, ул.Советская 153, 91",
     "note": "Спасибо за отличные часы!"
   },
-  "messageAfterCreateOrder": "Спасибо за Ваш заказ. В ближайшее время с Вами свяжется менеджер для согласования заказа"
+  "messageAfterCreateOrder": "Спасибо за Ваш заказ. В ближайшее время с Вами свяжется менеджер для согласования заказа",
+
+
+  "womenUrl": "category/women",
+  "womenWatch": 
+  {
+    "name": "тест 4000",
+    "price": 440
+  },
+  "cleanCartMessage": "Корзина пуста",
+  "newWatch": 
+  {
+    "name": "Casio MQ-24-7BUL",
+    "price": 61.6
+  }
 }

@@ -2,47 +2,27 @@ import ModalWindow from "./Objects/ModalWindow";
 import Search from "./Objects/Search";
 import Table from "./Objects/Table";
 import testData from "../fixtures/TestData.json";
+import Functions from "./Objects/Functions";
 
 describe('LUXURY WATCHES', () => 
 {
+  const functions = new Functions();
   const search = new Search();
   const modalWinow = new ModalWindow();
   const table = new Table();
 
   it('Добавление товара в корзину', () => 
   {
-    cy.visit(testData.baseUrl);
-    cy.url().should('eq', testData.baseUrl);
-    cy.viewport('macbook-11');
+    functions.openSite(testData.baseUrl, 'macbook-11');
 
     cy.scrollTo(0, 350, { duration: 100 });
 
-    search.containerOfProduct().within(() => 
-    {
-      search.searchProductInContainer(testData.watchSecond.name).within(() => 
-      {
-      search.addProductToCart().click();
-      });
-    });
+    functions.addWatchInCart(testData.watchSecond.name);
 
-    modalWinow.modalWindowContent().within(() => 
-    {
-      table.tableCell(1, 2).contains(testData.watchSecond.name);
-      table.tableCell(1, 4).contains(testData.watchSecond.price);
-      table.totalProductPrice().contains(testData.watchSecond.price);
-      modalWinow.modalFooter().within(() => 
-      {
-        modalWinow.makeOrderButton().click();
-      });
-    });
+    functions.checkWatchInformation(testData.watchSecond.name, testData.watchSecond.price);
 
     cy.url().should('eq', testData.baseUrl + testData.cartUrl);
 
-    table.tableOrdering().within(() => 
-    {
-      table.tableCell(1, 2).contains(testData.watchSecond.name);
-      table.tableCell(1, 4).contains(testData.watchSecond.price);
-      table.totalProductPrice().contains(testData.watchSecond.price);
-    });
+    functions.checkWatchInformationInCart(testData.watchSecond.name, testData.watchSecond.price);
   });
 });
